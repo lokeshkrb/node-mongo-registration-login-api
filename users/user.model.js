@@ -6,6 +6,10 @@ const schema = new Schema({
     hash: { type: String, required: true },
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
+    emailAddress: { type: String, required: true},
+    fileName: {type: String, required: false},
+    fileContent: {type: String, required: false},
+    wordCount: {type: Number, required: false},
     createdDate: { type: Date, default: Date.now }
 });
 
